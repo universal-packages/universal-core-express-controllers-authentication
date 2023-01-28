@@ -1,0 +1,5 @@
+default:
+  dynamicsLocation: './src/dynamics'
+
+development:
+  secret: development-secret

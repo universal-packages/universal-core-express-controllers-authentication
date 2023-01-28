@@ -1,26 +1,29 @@
-# Core Express Controllers
+# Core Express Controllers Authentication
 
-[![npm version](https://badge.fury.io/js/@universal-packages%2Fcore-express-controllers.svg)](https://www.npmjs.com/package/@universal-packages/core-express-controllers)
-[![Testing](https://github.com/universal-packages/universal-core-express-controllers/actions/workflows/testing.yml/badge.svg)](https://github.com/universal-packages/universal-core-express-controllers/actions/workflows/testing.yml)
-[![codecov](https://codecov.io/gh/universal-packages/universal-core-express-controllers/branch/main/graph/badge.svg?token=CXPJSN8IGL)](https://codecov.io/gh/universal-packages/universal-core-express-controllers)
+[![npm version](https://badge.fury.io/js/@universal-packages%2Fcore-express-controllers-authentication.svg)](https://www.npmjs.com/package/@universal-packages/core-express-controllers-authentication)
+[![Testing](https://github.com/universal-packages/universal-core-express-controllers-authentication/actions/workflows/testing.yml/badge.svg)](https://github.com/universal-packages/universal-core-express-controllers-authentication/actions/workflows/testing.yml)
+[![codecov](https://codecov.io/gh/universal-packages/universal-core-express-controllers-authentication/branch/main/graph/badge.svg?token=CXPJSN8IGL)](https://codecov.io/gh/universal-packages/universal-core-express-controllers-authentication)
 
-[Express Controllers](https://github.com/universal-packages/universal-express-controllers) universal-core module abstraction.
+[Express Controllers Authentication](https://github.com/universal-packages/universal-express-controllers-authentication) universal-core module abstraction.
 
 ## Install
 
 ```shell
+npm install @universal-packages/core-express-controllers-authentication
+
 npm install @universal-packages/core-express-controllers
-npm install @universal-packages/express-controllers
-npm install express
 ```
 
 ## Initialization
 
 ```shell
-ucore exec express-task init
+ucore exec authentication-task init
+ucore exec authentication-task init -ts
 ```
 
 ## Running App
+
+This a complement module that works along side the express app available in universal-express-controllers core app.
 
 ```
 ucore run express-app
