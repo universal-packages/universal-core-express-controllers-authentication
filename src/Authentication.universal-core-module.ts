@@ -5,7 +5,7 @@ import { TerminalTransport } from '@universal-packages/logger'
 
 export default class AuthenticationModule extends CoreModule<ExpressControllerAuthenticationOptions> {
   public static readonly moduleName = 'authentication-module'
-  public static readonly description = 'Background jobs core module wrapper'
+  public static readonly description = 'Authentication core module wrapper'
   public static readonly defaultConfig: ExpressControllerAuthenticationOptions = { dynamicsLocation: './src', secret: 'default' }
 
   public subject: Authentication
