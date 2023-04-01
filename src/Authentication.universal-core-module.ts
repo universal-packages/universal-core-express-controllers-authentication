@@ -19,8 +19,6 @@ export default class AuthenticationModule extends CoreModule<ExpressControllerAu
     this.subject.on('warning', (data: any): void => {
       this.logger.publish('WARNING', 'Authentication Dynamic waring', data.message, 'AUTH', { metadata: data })
     })
-
-    await this.subject.loadDynamics()
   }
 
   public async release(): Promise<void> {}
