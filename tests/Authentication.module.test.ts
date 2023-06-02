@@ -1,4 +1,5 @@
 import { Logger } from '@universal-packages/logger'
+
 import { AuthenticationModule } from '../src'
 
 describe('AuthenticationModule', (): void => {
