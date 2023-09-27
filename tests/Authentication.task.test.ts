@@ -5,7 +5,7 @@ import AuthenticationTask from '../src/Authentication.universal-core-task'
 
 jest.mock('@universal-packages/template-populator')
 
-describe('AuthenticationTask', (): void => {
+describe(AuthenticationTask, (): void => {
   it('behaves as expected', async (): Promise<void> => {
     const logger = new Logger({ silence: true })
 
