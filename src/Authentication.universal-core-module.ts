@@ -16,8 +16,8 @@ export default class AuthenticationModule extends CoreModule<ExpressControllerAu
 
     this.subject = (await initialize(this.config)).instance
 
-    this.subject.on('warning', (data: any): void => {
-      this.logger.publish('WARNING', 'Authentication Dynamic waring', data.message, 'AUTH', { metadata: data })
+    this.subject.on('warning', (event): void => {
+      this.logger.publish('WARNING', 'Authentication Dynamic waring', event.payload.message, 'AUTH', { metadata: event.payload })
     })
   }
 
