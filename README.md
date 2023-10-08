@@ -31,6 +31,12 @@ ucore run express-app
 
 ## Typescript
 
+In order for typescript to see the `authenticationSubject` global you need to reference the types somewhere in your project, normally `./src/globals.ts`.
+
+```ts
+/// <reference types="@universal-packages/core-express-controllers-authentication" />
+```
+
 This library is developed in TypeScript and shipped fully typed.
 
 ## Contributing
