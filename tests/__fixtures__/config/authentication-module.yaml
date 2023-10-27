@@ -1,0 +1,2 @@
+dynamicsLocation: './tests/__fixtures__'
+secret: core-test-secret
