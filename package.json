@@ -19,7 +19,7 @@
     "@universal-packages/express-controllers-authentication": "^1.6.17"
   },
   "peerDependencies": {
-    "@universal-packages/core": "^1.16.12",
+    "@universal-packages/core": "^1.16.13",
     "@universal-packages/core-express-controllers": "^1.4.0"
   },
   "devDependencies": {
