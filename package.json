@@ -1,6 +1,6 @@
 {
   "name": "@universal-packages/core-express-controllers-authentication",
-  "version": "1.3.92",
+  "version": "1.3.93",
   "description": "Express Controllers Authentication universal-core module abstraction.",
   "author": "David De Anda <david@universal-packages.com> (https://github.com/universal-packages)",
   "license": "MIT",
