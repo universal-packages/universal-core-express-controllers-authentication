@@ -16,10 +16,10 @@
     "update-universal-dependencies": "umaintenance update-universal-dependencies"
   },
   "dependencies": {
-    "@universal-packages/express-controllers-authentication": "^1.6.35"
+    "@universal-packages/express-controllers-authentication": "^1.7.1"
   },
   "peerDependencies": {
-    "@universal-packages/core-express-controllers": "^1.4.33"
+    "@universal-packages/core-express-controllers": "^1.5.1"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "^4.2.0",
