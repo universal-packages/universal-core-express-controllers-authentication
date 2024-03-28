@@ -1,7 +1,8 @@
 import { Authentication } from '@universal-packages/authentication'
 import { CoreModule } from '@universal-packages/core'
 import { ExpressControllerAuthenticationOptions, initialize } from '@universal-packages/express-controllers-authentication'
-import { TerminalTransport } from '@universal-packages/logger'
+
+import { LOG_CONFIGURATION } from './LOG_CONFIGURATION'
 
 export default class AuthenticationModule extends CoreModule<ExpressControllerAuthenticationOptions> {
   public static readonly moduleName = 'authentication-module'
@@ -11,13 +12,19 @@ export default class AuthenticationModule extends CoreModule<ExpressControllerAu
   public subject: Authentication
 
   public async prepare(): Promise<void> {
-    const terminalTransport = this.logger.getTransport('terminal') as TerminalTransport
-    terminalTransport.options.categoryColors['AUTH'] = 'YELLOW'
-
     this.subject = (await initialize(this.config)).instance
 
     this.subject.on('warning', (event): void => {
-      this.logger.publish('WARNING', 'Authentication Dynamic waring', event.payload.message, 'AUTH', { metadata: event.payload })
+      this.logger.log(
+        {
+          level: 'WARNING',
+          title: 'Authentication Dynamic waring',
+          message: event.payload.message,
+          category: 'AUTH',
+          metadata: event.payload
+        },
+        LOG_CONFIGURATION
+      )
     })
   }
 
