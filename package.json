@@ -16,8 +16,7 @@
     "update-universal-dependencies": "umaintenance update-universal-dependencies"
   },
   "dependencies": {
-    "@universal-packages/express-controllers-authentication": "^1.7.1",
-    "@universal-packages/logger-terminal-presenter": "^1.0.9"
+    "@universal-packages/express-controllers-authentication": "^1.7.1"
   },
   "peerDependencies": {
     "@universal-packages/core-express-controllers": "^1.6.0"
