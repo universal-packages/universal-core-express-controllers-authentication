@@ -1,1 +1,1 @@
-declare var authenticationSubject: import('@universal-packages/authentication').Authentication
+declare var expressControllersAuthenticationSubject: import('@universal-packages/authentication').Authentication
