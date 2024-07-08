@@ -1,4 +1,4 @@
-import { AuthenticationModule } from '../src'
+import { ExpressControllersAuthentication } from '../src'
 
 jestCore.runBare({
   coreConfigOverride: {
@@ -8,10 +8,10 @@ jestCore.runBare({
   }
 })
 
-describe(AuthenticationModule, (): void => {
+describe(ExpressControllersAuthentication, (): void => {
   it('behaves as expected', async (): Promise<void> => {
-    expect(global.authenticationSubject).not.toBeUndefined()
-    expect(global.authenticationSubject.options).toEqual({
+    expect(global.expressControllersAuthenticationSubject).not.toBeUndefined()
+    expect(global.expressControllersAuthenticationSubject.options).toEqual({
       debug: true,
       dynamicsLocation: './tests/__fixtures__',
       maxAttemptsUntilLock: 5,

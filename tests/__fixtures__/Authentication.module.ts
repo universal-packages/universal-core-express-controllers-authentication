@@ -1,1 +1,1 @@
-export { default } from '../../src/Authentication.universal-core-module'
+export { default } from '../../src/ExpressControllersAuthentication.universal-core-module'

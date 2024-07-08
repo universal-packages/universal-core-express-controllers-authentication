@@ -17,7 +17,7 @@ npm install @universal-packages/core-express-controllers
 ## Initialization
 
 ```shell
-ucore initialize authentication
+ucore initialize express-controllers-authentication
 ```
 
 ## Running App

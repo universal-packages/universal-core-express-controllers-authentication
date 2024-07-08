@@ -1,3 +1,3 @@
 import './globals'
 
-export { default as AuthenticationModule } from './Authentication.universal-core-module'
+export { default as ExpressControllersAuthentication } from './ExpressControllersAuthentication.universal-core-module'
