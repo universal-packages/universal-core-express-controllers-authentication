@@ -1,0 +1,9 @@
+import { CoreEnvironment } from "@universal-packages/core";
+// import User from './'
+
+export default class ExpressControllersAuthenticationEnvironment extends CoreEnvironment {
+  afterModulesLoad() {
+    // Set here the Authenticatable class/model/entity
+    // expressControllersAuthenticationSubject.setAuthenticatable(User)
+  }
+}
