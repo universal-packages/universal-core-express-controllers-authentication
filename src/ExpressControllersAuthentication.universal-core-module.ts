@@ -5,7 +5,7 @@ import { ExpressControllerAuthenticationOptions, initialize } from '@universal-p
 import { LOG_CONFIGURATION } from './LOG_CONFIGURATION'
 
 export default class ExpressControllersAuthenticationModule extends CoreModule<ExpressControllerAuthenticationOptions> {
-  public static readonly moduleName = 'express-controllers-authentication-module'
+  public static readonly moduleName = 'express-controllers-authentication'
   public static readonly description = 'Express Controllers Authentication core module wrapper'
   public static readonly defaultConfig: ExpressControllerAuthenticationOptions = { dynamicsLocation: './src', secret: 'default' }
 
